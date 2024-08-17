@@ -113,50 +113,6 @@ const Home = ({
           <DockDemo resumeUrl={resumeUrl} />
         </div>
         <div
-          key="themeSwitch"
-          className={cn(
-            "bg-white dark:bg-darkBg border-2 border-transparent dark:border-knight cursor-grab active:cursor-grabbing rounded-[2rem] flex justify-center items-center z-[1]",
-            selectedCard[tabSelected]["themeSwitch"]
-              ? "opacity-100"
-              : "opacity-50",
-          )}
-        >
-          <ThemeSwitch />
-        </div>
-        <div
-          key="cardStack"
-          className={cn(
-            "bg-white dark:bg-darkBg border-2 border-transparent dark:border-knight cursor-grab active:cursor-grabbing rounded-[2rem] flex justify-center items-center z-[2]",
-            selectedCard[tabSelected]["cardStack"]
-              ? "opacity-100"
-              : "opacity-50",
-          )}
-        >
-          <CardStack photos={photos} />
-        </div>
-        <div
-          key="animatedEmoji"
-          className={cn(
-            "bg-white dark:bg-darkBg border-2 border-transparent dark:border-knight cursor-grab active:cursor-grabbing rounded-[2rem] flex justify-center items-center z-[1]",
-            selectedCard[tabSelected]["animatedEmoji"]
-              ? "opacity-100"
-              : "opacity-50",
-          )}
-        >
-          <AnimatedEmoji />
-        </div>
-        <div
-          key="mapComponent"
-          className={cn(
-            "bg-white dark:bg-darkBg cursor-grab active:cursor-grabbing rounded-[2rem] flex justify-center items-center z-[1]",
-            selectedCard[tabSelected]["mapComponent"]
-              ? "opacity-100"
-              : "opacity-50",
-          )}
-        >
-          <MapComponent />
-        </div>
-        <div
           key="iconCloud"
           className={cn(
             "bg-white dark:bg-darkBg border-2 border-transparent dark:border-knight cursor-grab active:cursor-grabbing rounded-[2rem] flex justify-center items-center relative overflow-hidden p-10 md:p-8 z-[1]",
@@ -186,22 +142,6 @@ const Home = ({
           )}
         >
           <Chatbot chatbotUrl={chatbotUrl} />
-        </div>
-        <div
-          key="miniModel"
-          className={cn(
-            "bg-white dark:bg-darkBg border-2 border-transparent dark:border-knight cursor-grab active:cursor-grabbing rounded-[2rem] flex justify-center items-center z-[1] overflow-hidden",
-            selectedCard[tabSelected]["miniModel"]
-              ? "opacity-100"
-              : "opacity-50",
-          )}
-        >
-          {animated ? <MiniModel /> : <MiniPic />}
-          <AnimationSwitch
-            animated={animated}
-            className="absolute top-4 right-4 z-50"
-            setAnimated={setAnimated}
-          />
         </div>
         <div
           key="actions"

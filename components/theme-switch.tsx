@@ -32,12 +32,12 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({ className }) => {
           base: "w-[4.5rem] h-10",
           thumbIcon: "w-5 h-5",
         }}
-        defaultSelected={theme === "light" || isSSR}
+        defaultSelected={theme === "dark" || isSSR}
         thumbIcon={({ isSelected, className: iconClassName }) =>
           isSelected ? (
-            <SunIcon className={iconClassName} />
-          ) : (
             <MoonIcon className={iconClassName} />
+          ) : (
+            <SunIcon className={iconClassName} />
           )
         }
         onChange={onChange}
