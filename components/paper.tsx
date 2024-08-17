@@ -23,10 +23,10 @@ const Paper = ({ paperUrl }: PaperProps) => {
           <Link
             isExternal
             color="foreground"
-            href="https://ojs.aaai.org/index.php/AAAI/article/view/29266"
+            href="https://www.e-verify.gov/about-e-verify/e-verify-data/how-to-find-participating-employers"
           >
             <span className="text-sm md:text-medium text-nowrap hidden group-hover:block invisible group-hover:visible mr-1 animate-fade">
-              DT-VAEGAN
+              E-Verify
             </span>
             <GoArrowUpRight />
           </Link>

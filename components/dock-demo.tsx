@@ -19,12 +19,6 @@ export function DockDemo({ resumeUrl }: DockDemoProps) {
   return (
     <button className="self-end" onMouseDown={(e) => e.stopPropagation()}>
       <Dock>
-        <DockIcon url={resumeUrl}>
-          <IoDocumentText className="h-5 w-5" />
-        </DockIcon>
-        <DockIcon url={siteConfig.links.github}>
-          <IoLogoGithub className="h-5 w-5" />
-        </DockIcon>
         <DockIcon url={siteConfig.links.linkedin}>
           <IoLogoLinkedin className="h-5 w-5" />
         </DockIcon>

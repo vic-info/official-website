@@ -81,10 +81,8 @@ const Home = ({
           setTabSelected(selected as string);
         }}
       >
-        <Tab key="all" title="All" />
-        <Tab key="about" title="About" />
-        <Tab key="projects" title="Projects" />
-        <Tab key="blog" title="Blog" />
+        <Tab key="projects" title="Services" />
+        <Tab key="about" title="About VIC INFO" />
       </Tabs>
 
       <Responsive

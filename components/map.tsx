@@ -14,21 +14,21 @@ const MapComponent: React.FC = () => {
       : "mapbox://styles/mapbox/standard";
   }, [theme]);
 
-  useEffect(() => {
-    const map = new mapboxgl.Map({
-      accessToken: process.env.NEXT_PUBLIC_MAPBOX_TOKEN,
-      container: mapContainerRef.current as HTMLElement,
-      style: style,
-      center: [-118.4438, 34.0699],
-      zoom: 10,
-    });
+  // useEffect(() => {
+  //   const map = new mapboxgl.Map({
+  //     accessToken: process.env.NEXT_PUBLIC_MAPBOX_TOKEN,
+  //     container: mapContainerRef.current as HTMLElement,
+  //     style: style,
+  //     center: [-118.4438, 34.0699],
+  //     zoom: 10,
+  //   });
 
-    map.on("load", () => {
-      setMapLoaded(true);
-    });
+  //   map.on("load", () => {
+  //     setMapLoaded(true);
+  //   });
 
-    return () => map.remove(); // Cleanup on unmount
-  }, [style]);
+  //   return () => map.remove(); // Cleanup on unmount
+  // }, [style]);
 
   return (
     <div className="w-full h-full rounded-3xl overflow-hidden">
