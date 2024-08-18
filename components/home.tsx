@@ -111,7 +111,7 @@ const Home = ({
             skilled talent that perfectly matches their needs. Many of the
             candidates trained by us are now thriving in roles at top companies
             like <strong>Walmart</strong>, <strong>eBay</strong>,{" "}
-            <strong>Apple</strong>, and <strong>PayPal</strong>. At{" "}
+            <strong>Apple</strong>, <strong>PayPal</strong>, etc. At{" "}
             <strong>VIC INFO</strong>, we are committed to bridging the gap
             between talented individuals and leading organizations in the tech
             industry. <br></br>

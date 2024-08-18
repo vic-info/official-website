@@ -8,7 +8,7 @@ interface ChatbotProps {
 const Chatbot = ({ chatbotUrl }: ChatbotProps) => {
   return (
     <div className="relative bg-cardYellow w-full h-full group dark:bg-darkBg">
-      <div className="absolute -top-40 left-40 bg-cardPink w-[135%] h-full rounded-full dark:hidden" />
+      {/* <div className="absolute -top-40 left-40 bg-cardPink w-[135%] h-full rounded-full dark:hidden" /> */}
       <div>
         <Image
           alt="Chatbot"

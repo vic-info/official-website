@@ -8,7 +8,7 @@ interface WebAgentProps {
 const WebAgent = ({ webAgentUrl }: WebAgentProps) => {
   return (
     <div className="relative bg-cardGreen w-full h-full group dark:bg-darkBg">
-      <div className="absolute -bottom-96 left-16 bg-cardPink w-[145%] h-full rounded-full dark:hidden" />
+      {/* <div className="absolute -bottom-96 left-16 bg-cardPink w-[145%] h-full rounded-full dark:hidden" /> */}
       <div>
         <Image
           alt="Web Agent"

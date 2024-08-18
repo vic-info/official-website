@@ -9,7 +9,7 @@ interface ActionsProps {
 const Actions = ({ photoUrl }: ActionsProps) => {
   return (
     <div className="relative bg-cardBlue w-full h-full group dark:bg-darkBg">
-      <div className="absolute -bottom-32 md:-bottom-52 left-1/2 -translate-x-1/2 bg-cardPink w-64 h-56 md:w-96 md:h-96 rounded-full dark:hidden" />
+      {/* <div className="absolute -bottom-32 md:-bottom-52 left-1/2 -translate-x-1/2 bg-cardPink w-64 h-56 md:w-96 md:h-96 rounded-full dark:hidden" /> */}
       <div>
         <Image
           alt="Actions"
