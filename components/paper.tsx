@@ -9,7 +9,7 @@ const Paper = ({ paperUrl }: PaperProps) => {
   return (
     <div className="relative bg-cardYellow w-full h-full group dark:bg-darkBg">
       <div className="absolute -top-40 left-40 bg-cardPink w-[135%] h-full rounded-full dark:hidden" />
-      <div className="absolute top-16 md:top-1/2 -translate-y-1/2 left-12 md:left-16 rounded-2xl -rotate-[30deg] w-full">
+      <div>
         <Image
           alt="Paper"
           className="h-full w-full rounded-2xl object-contain"

@@ -9,8 +9,7 @@ const WebAgent = ({ webAgentUrl }: WebAgentProps) => {
   return (
     <div className="relative bg-cardGreen w-full h-full group dark:bg-darkBg">
       <div className="absolute -bottom-96 left-16 bg-cardPink w-[145%] h-full rounded-full dark:hidden" />
-
-      <div className="absolute top-1/2 -translate-y-1/2 left-24 md:left-32 transform -rotate-[30deg] rounded-2xl w-[80%]">
+      <div>
         <Image
           alt="Web Agent"
           className="w-full h-full object-contain rounded-2xl"
