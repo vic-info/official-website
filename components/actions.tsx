@@ -15,7 +15,7 @@ const Actions = ({ photoUrl }: ActionsProps) => {
           alt="Actions"
           className="w-full h-full rounded-2xl object-contain"
           height={1280}
-          src={"/web_dev.jpg"}
+          src={"/interview.jpg"}
           width={2259}
         />
       </div>
@@ -23,7 +23,7 @@ const Actions = ({ photoUrl }: ActionsProps) => {
         <div className="flex justify-center items-center">
           <Link isExternal color="foreground">
             <span className="text-sm md:text-medium text-nowrap hidden group-hover:block invisible group-hover:visible mr-1 animate-fade">
-              Web Development
+              Interview
             </span>
           </Link>
           <GoArrowUpRight />

@@ -117,7 +117,7 @@ const Home = ({
             industry. <br></br>
             <strong>
               If you are interested, please scan the WeChat QR code to learn
-              more.
+              more, or send me your resume through email.
             </strong>
           </p>
           <DockDemo resumeUrl={resumeUrl} />

@@ -14,7 +14,7 @@ const Chatbot = ({ chatbotUrl }: ChatbotProps) => {
           alt="Chatbot"
           className="h-48 md:h-96 object-cover rounded-2xl"
           height={1280}
-          src={chatbotUrl}
+          src={"/web_dev.jpg"}
           width={2629}
         />
       </div>
