@@ -23,11 +23,9 @@ const Actions = ({ photoUrl }: ActionsProps) => {
         <div className="flex justify-center items-center">
           <Link
             isExternal
-            color="foreground"
-            href="https://action.simplegen.ai/"
-          >
+            color="foreground">
             <span className="text-sm md:text-medium text-nowrap hidden group-hover:block invisible group-hover:visible mr-1 animate-fade">
-              GPT Actions
+              Tech Training
             </span>
           </Link>
           <GoArrowUpRight />
