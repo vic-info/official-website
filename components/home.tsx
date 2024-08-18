@@ -102,7 +102,7 @@ const Home = ({
             selectedCard[tabSelected]["avatar"] ? "opacity-100" : "opacity-50",
           )}
         >
-          <AvatarTransition avatarUrl={avatarUrl} dogUrl={dogUrl} />
+          <AvatarTransition avatarUrl={"/vic_boy.jpg"} dogUrl={"/vic_girl.jpg"} />
           <p className="text-sm md:text-medium">
             We are VIC INFO. We specialize in IT staffing and tech training,
             offering comprehensive technical training and interview support

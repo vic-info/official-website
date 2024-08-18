@@ -25,7 +25,7 @@ const Actions = ({ photoUrl }: ActionsProps) => {
             isExternal
             color="foreground">
             <span className="text-sm md:text-medium text-nowrap hidden group-hover:block invisible group-hover:visible mr-1 animate-fade">
-              Tech Training
+              Development
             </span>
           </Link>
           <GoArrowUpRight />
