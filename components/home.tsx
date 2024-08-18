@@ -104,11 +104,14 @@ const Home = ({
         >
           <AvatarTransition avatarUrl={avatarUrl} dogUrl={dogUrl} />
           <p className="text-sm md:text-medium">
-            Hey! I’m <span className="font-oleo text-2xl"> Eric</span>, a
-            software engineer with a knack for AI, hailing from UCLA and Purdue.
-            Currently, I’m building a cool marketing AI agent. My world revolves
-            around web development, deep learning, and data science. And yes, I
-            have an adorable dog named Bert!
+            We are VIC INFO. We specialize in IT staffing and tech training,
+            offering comprehensive technical training and interview support
+            services to candidates. Our mission is to connect our clients with
+            highly skilled talent that perfectly matches their needs. Many of
+            the candidates trained by us are now thriving in roles at top
+            companies like Walmart, eBay, Apple, and PayPal. At VIC INFO, we are
+            committed to bridging the gap between talented individuals and
+            leading organizations in the tech industry.
           </p>
           <DockDemo resumeUrl={resumeUrl} />
         </div>

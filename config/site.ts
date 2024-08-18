@@ -6,6 +6,7 @@ export const siteConfig = {
   links: {
     linkedin: "https://www.linkedin.com/in/vic-s-357ba92b6/",
     email: "mailto:hr@vicinfo.tech",
+    wechat: "https://github.com/vic-info/pics/blob/main/wechat.jpg?raw=true",
   },
 };
 

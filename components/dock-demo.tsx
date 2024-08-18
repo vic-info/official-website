@@ -4,6 +4,7 @@ import {
   IoLogoLinkedin,
   IoDocumentText,
   IoMail,
+  IoLogoWechat,
 } from "react-icons/io5";
 
 import { Dock, DockIcon } from "@/components/dock";
@@ -19,6 +20,9 @@ export function DockDemo({ resumeUrl }: DockDemoProps) {
   return (
     <button className="self-end" onMouseDown={(e) => e.stopPropagation()}>
       <Dock>
+        <DockIcon url={siteConfig.links.wechat}>
+          <IoLogoWechat className="h-5 w-5" />
+        </DockIcon>
         <DockIcon url={siteConfig.links.linkedin}>
           <IoLogoLinkedin className="h-5 w-5" />
         </DockIcon>
