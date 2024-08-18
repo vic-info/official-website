@@ -104,14 +104,21 @@ const Home = ({
         >
           <AvatarTransition avatarUrl={"/vic_boy.jpg"} dogUrl={"/vic_girl.jpg"} />
           <p className="text-sm md:text-medium">
-            We are VIC INFO. We specialize in IT staffing and tech training,
-            offering comprehensive technical training and interview support
-            services to candidates. Our mission is to connect our clients with
-            highly skilled talent that perfectly matches their needs. Many of
-            the candidates trained by us are now thriving in roles at top
-            companies like Walmart, eBay, Apple, and PayPal. At VIC INFO, we are
-            committed to bridging the gap between talented individuals and
-            leading organizations in the tech industry.
+            <strong>We are VIC INFO.</strong>
+            <br></br> We specialize in IT staffing and tech training, offering
+            comprehensive technical training and interview support services to
+            candidates. Our mission is to connect our clients with highly
+            skilled talent that perfectly matches their needs. Many of the
+            candidates trained by us are now thriving in roles at top companies
+            like <strong>Walmart</strong>, <strong>eBay</strong>,{" "}
+            <strong>Apple</strong>, and <strong>PayPal</strong>. At{" "}
+            <strong>VIC INFO</strong>, we are committed to bridging the gap
+            between talented individuals and leading organizations in the tech
+            industry. <br></br>
+            <strong>
+              If you are interested, please scan the WeChat QR code to learn
+              more.
+            </strong>
           </p>
           <DockDemo resumeUrl={resumeUrl} />
         </div>
