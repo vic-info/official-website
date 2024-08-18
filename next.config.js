@@ -5,6 +5,7 @@ const nextConfig = {
       "firebasestorage.googleapis.com",
       "raw.githubusercontent.com",
       "www.notion.so",
+      "github.com"
     ],
   },
 };

@@ -14,7 +14,7 @@ const WebAgent = ({ webAgentUrl }: WebAgentProps) => {
           alt="Web Agent"
           className="w-full h-full object-contain rounded-2xl"
           height={2380}
-          src={"/staffing.jpg"}
+          src={"https://github.com/vic-info/official-website/blob/main/public/staffing.jpg?raw=true"}
           width={1164}
         />
       </div>

@@ -15,7 +15,7 @@ const Actions = ({ photoUrl }: ActionsProps) => {
           alt="Actions"
           className="w-full h-full rounded-2xl object-contain"
           height={1280}
-          src={"/interview.jpg"}
+          src={"https://github.com/vic-info/official-website/blob/main/public/interview.jpg?raw=true"}
           width={2259}
         />
       </div>

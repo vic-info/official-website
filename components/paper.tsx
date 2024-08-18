@@ -14,7 +14,7 @@ const Paper = ({ paperUrl }: PaperProps) => {
           alt="Paper"
           className="h-full w-full rounded-2xl object-contain"
           height={1280}
-          src={"/everify.jpeg"}
+          src={"https://github.com/vic-info/official-website/blob/main/public/everify.jpeg?raw=true"}
           width={1577}
         />
       </div>

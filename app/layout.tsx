@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   icons: {
-    icon: "/1709016997722.ico",
+    icon: "/vicinfo.ico",
   },
 };
 
