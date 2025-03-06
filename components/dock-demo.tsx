@@ -1,10 +1,8 @@
 import React from "react";
 import {
-  IoLogoGithub,
   IoLogoLinkedin,
-  IoDocumentText,
-  IoMail,
   IoLogoWechat,
+  IoMail,
 } from "react-icons/io5";
 
 import { Dock, DockIcon } from "@/components/dock";

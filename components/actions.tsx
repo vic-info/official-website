@@ -8,25 +8,26 @@ interface ActionsProps {
 
 const Actions = ({ photoUrl }: ActionsProps) => {
   return (
-    <div className="relative bg-cardBlue w-full h-full group dark:bg-darkBg">
-      {/* <div className="absolute -bottom-32 md:-bottom-52 left-1/2 -translate-x-1/2 bg-cardPink w-64 h-56 md:w-96 md:h-96 rounded-full dark:hidden" /> */}
-      <div>
+    <div className="relative w-full h-full overflow-hidden group">
+      <div className="absolute inset-0">
         <Image
-          alt="Actions"
-          className="w-full h-full rounded-2xl object-contain"
-          height={1280}
+          alt="Interview Support"
+          className="w-full h-full object-cover"
           src={"https://github.com/vic-info/official-website/blob/main/public/interview.jpg?raw=true"}
-          width={2259}
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          priority
         />
       </div>
-      <button className="absolute bg-white dark:bg-darkBg bottom-2 left-2 transition-all w-10 h-10 md:w-[2.75rem] md:h-[2.75rem] duration-500 ease-in-out group-hover:w-40 p-2 rounded-full hover:bg-default-100 border-2 border-transparent dark:border-knight">
+      <div className="absolute inset-0 bg-black/20" />
+      <button className="absolute bg-white/80 dark:bg-darkBg/80 backdrop-blur-sm bottom-4 left-4 transition-all w-10 h-10 md:w-[2.75rem] md:h-[2.75rem] duration-500 ease-in-out group-hover:w-48 p-2 rounded-full hover:bg-default-100 border border-white/20">
         <div className="flex justify-center items-center">
           <Link isExternal color="foreground">
             <span className="text-sm md:text-medium text-nowrap hidden group-hover:block invisible group-hover:visible mr-1 animate-fade">
-              Interview
+              Interview Support
             </span>
+            <GoArrowUpRight />
           </Link>
-          <GoArrowUpRight />
         </div>
       </button>
     </div>

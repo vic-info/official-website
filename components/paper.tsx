@@ -1,24 +1,25 @@
 import { Link } from "@nextui-org/react";
 import { GoArrowUpRight } from "react-icons/go";
 import Image from "next/image";
+
 interface PaperProps {
   paperUrl: string;
 }
 
 const Paper = ({ paperUrl }: PaperProps) => {
   return (
-    <div className="relative bg-cardYellow w-full h-full group dark:bg-darkBg">
-      {/* <div className="absolute -top-40 left-40 bg-cardPink w-[135%] h-full rounded-full dark:hidden" /> */}
-      <div>
+    <div className="relative w-full h-full overflow-hidden group bg-[#0A192F] flex items-center justify-center p-2">
+      <div className="relative w-[95%] h-[95%]">
         <Image
-          alt="Paper"
-          className="h-full w-full rounded-2xl object-contain"
-          height={1280}
+          alt="E-Verify"
+          className="object-contain"
           src={"https://github.com/vic-info/official-website/blob/main/public/everify.jpeg?raw=true"}
-          width={1577}
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          priority
         />
       </div>
-      <button className="absolute bg-white dark:bg-darkBg bottom-2 left-2 transition-all w-10 h-10 md:w-[2.75rem] md:h-[2.75rem] duration-500 ease-in-out group-hover:w-40 p-2 rounded-full hover:bg-default-100 border-2 border-transparent dark:border-knight">
+      <button className="absolute bg-white/80 dark:bg-darkBg/80 backdrop-blur-sm bottom-2 left-2 transition-all w-10 h-10 md:w-[2.75rem] md:h-[2.75rem] duration-500 ease-in-out group-hover:w-32 p-2 rounded-full hover:bg-default-100 border border-white/20">
         <div className="flex justify-center items-center">
           <Link
             isExternal

@@ -5,7 +5,7 @@ export const siteConfig = {
   description: "VIC INFO official website",
   links: {
     linkedin: "https://www.linkedin.com/in/vic-s-357ba92b6/",
-    email: "mailto:hr@vicinfo.tech",
+    email: "mailto:vic.sun@vicinfo.tech",
     wechat:
       "https://github.com/vic-info/official-website/blob/main/public/wechat.jpg?raw=true",
   },
