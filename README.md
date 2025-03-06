@@ -1,26 +1,20 @@
-# My personal Website
+# VIC Info LLC Official Website
 
-<a href="https://ericwu.me">ericwu.me</a>
+VIC Info LLC is a professional IT staffing and technology solutions company. Our official website is built with Next.js 14, featuring modern design and technology stack to provide visitors with a smooth browsing experience.
 
-![image](https://github.com/user-attachments/assets/38e4b0b4-b942-4e46-9248-4423e820bba9)
+## Key Features
 
-![Google Chrome 2024-07-12 22 33 34](https://github.com/user-attachments/assets/7949a952-580f-4577-ab7f-e7ccfc1dd57e)
+- **Modern Tech Stack**: Built with Next.js 14, React, and TypeScript
+- **Responsive Design**: Perfectly adapts to various device screen sizes
+- **Dark Mode Support**: Toggle between light and dark themes
+- **Optimized Performance**: Implements image optimization and code splitting for best performance
+- **SEO Friendly**: Optimized for search engines to improve visibility
 
-Built using Next.js 14. The website features a blog powered by the Notion API, serving as the CMS. The design is inspired by Nev Flynn's Bento design, focusing on simplicity and user-friendly interfaces.
-
-## Features
-
-- **Next.js 14**: Utilizes the latest features of Next.js for fast rendering and efficient SEO optimization.
-- **Notion API**: Integrates Notion as a headless CMS to manage and retrieve blog content dynamically.
-- **Responsive Bento Design**: Adopts the aesthetic and functional principles of Bento design, customized for a unique look and feel.
-
-## Getting Started
+## Development Setup
 
 ### Prerequisites
 
-Before you begin, ensure you have the following installed:
-
-- Node.js (v16.x or later recommended)
+- Node.js (v18.x or higher)
 - npm or yarn
 
 ### Installation
@@ -28,42 +22,31 @@ Before you begin, ensure you have the following installed:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/itsEricWu/ericwu.me.git
+   git clone https://github.com/vic-info/official-website.git
    ```
 
 2. Install dependencies:
 
    ```bash
    yarn install
+   # or
+   npm install
    ```
 
-3. Set up environment variables:
-   Create a `.env.local` file in the root directory and add the following variables:
-   ```plaintext
-    OPENAI_API_KEY=exampleAPIKey
-    NEXT_PUBLIC_MAPBOX_TOKEN=exampleAPIKey
-    NEXT_PUBLIC_FIREBASE_API_KEY=exampleAPIKey
-    SITE_URL=https://www.example.com
+3. Run the development server:
+
+   ```bash
+   yarn dev
+   # or
+   npm run dev
    ```
 
-### Running the project
-
-To run the development server:
-
-```bash
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000) to view the website.
 
 ## Deployment
 
-This website is ready to be deployed on platforms like Vercel, Netlify, or any other platform that supports Next.js. Follow the deployment documentation of your chosen platform for specific instructions.
+This website is deployed using GitHub Pages. GitHub Actions automatically builds and deploys the site whenever changes are pushed to the main branch.
 
-## Star History
+## License
 
-[![Star History Chart](https://api.star-history.com/svg?repos=itsEricWu/ericwu.me&type=Date)](https://star-history.com/#itsEricWu/ericwu.me&Date)
-
-## Contributing
-
-Contributions are welcome! For major changes, please open an issue first to discuss what you would like to change.
+© 2024 VIC Info LLC. All rights reserved.
