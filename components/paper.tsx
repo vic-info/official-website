@@ -13,7 +13,7 @@ const Paper = ({ paperUrl }: PaperProps) => {
         <Image
           alt="E-Verify"
           className="object-contain"
-          src={"https://github.com/vic-info/official-website/blob/main/public/everify.jpeg?raw=true"}
+          src={"https://github.com/vic-info/official-website/blob/main/public/everify.png?raw=true"}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           priority
