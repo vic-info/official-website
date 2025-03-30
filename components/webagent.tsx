@@ -18,6 +18,7 @@ const WebAgent = ({ webAgentUrl }: WebAgentProps) => {
           priority
           quality={90}
           loading="eager"
+          style={{ objectPosition: '-20% center' }}
         />
       </div>
       <div className="absolute inset-0 bg-black/20 transition-opacity duration-300 group-hover:bg-black/10" />
