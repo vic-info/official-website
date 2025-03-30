@@ -13,7 +13,7 @@ const Actions = ({ photoUrl }: ActionsProps) => {
         <Image
           alt="Interview Support"
           className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-          src={"https://github.com/vic-info/official-website/blob/main/public/softwaredevelopment.png?raw=true"}
+          src={"https://github.com/vic-info/official-website/blob/main/public/interviewsupport.png?raw=true"}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           priority
