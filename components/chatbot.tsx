@@ -12,7 +12,7 @@ const Chatbot = ({ chatbotUrl }: ChatbotProps) => {
         <Image
           alt="Tech Training"
           className="w-full h-full object-cover"
-          src={"https://github.com/vic-info/official-website/blob/main/public/web_dev.jpg?raw=true"}
+          src={"https://github.com/vic-info/official-website/blob/main/public/softwaredevelopment.png?raw=true"}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           priority
