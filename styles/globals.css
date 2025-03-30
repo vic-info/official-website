@@ -2,36 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 添加图片加载优化 */
+@layer utilities {
+  .image-loading {
+    @apply blur-sm;
+  }
+  
+  .image-loaded {
+    @apply blur-0 transition-all duration-300;
+  }
+}
+
+/* 优化网格布局过渡 */
 .react-grid-item.react-grid-placeholder {
   background: gray;
   transition-duration: 300ms;
   border-radius: 1.5rem;
   z-index: 0;
+  opacity: 0.3;
 }
 
 .react-grid-item {
   transition-duration: 400ms;
+  transition-property: transform, width, height;
+  transition-timing-function: ease;
 }
 
+/* 地图控件隐藏 */
 .mapboxgl-control-container {
   display: none !important;
 }
 
+/* 图片缩放效果 */
 .medium-zoom-image {
   border-radius: 2rem;
+  transition: transform 0.3s ease;
 }
 
+.medium-zoom-image:hover {
+  transform: scale(1.02);
+}
+
+/* 代码块样式优化 */
 .notion-code {
   border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+
+.notion-code:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .notion-code-copy-button {
   display: none;
 }
 
+/* iframe样式优化 */
 iframe.notion-asset-object-fit {
   background-color: transparent;
   border-radius: 1rem;
+  transition: transform 0.3s ease;
+}
+
+iframe.notion-asset-object-fit:hover {
+  transform: scale(1.01);
 }
 
 .video-stream html5-main-video {
@@ -42,4 +77,9 @@ iframe.notion-asset-object-fit {
 .notion-yt-lite {
   border-radius: 1rem;
   background-color: transparent;
+  transition: transform 0.3s ease;
+}
+
+.notion-yt-lite:hover {
+  transform: scale(1.01);
 }

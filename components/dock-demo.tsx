@@ -2,8 +2,8 @@ import React from "react";
 import {
   IoLogoLinkedin,
   IoLogoWechat,
-  IoMail,
 } from "react-icons/io5";
+import { SiXiaohongshu } from "react-icons/si";
 
 import { Dock, DockIcon } from "@/components/dock";
 import { siteConfig } from "@/config/site";
@@ -18,14 +18,14 @@ export function DockDemo({ resumeUrl }: DockDemoProps) {
   return (
     <button className="self-end" onMouseDown={(e) => e.stopPropagation()}>
       <Dock>
+        <DockIcon url={siteConfig.links.xiaohongshu}>
+          <SiXiaohongshu className="h-5 w-5" />
+        </DockIcon>
         <DockIcon url={siteConfig.links.wechat}>
           <IoLogoWechat className="h-5 w-5" />
         </DockIcon>
         <DockIcon url={siteConfig.links.linkedin}>
           <IoLogoLinkedin className="h-5 w-5" />
-        </DockIcon>
-        <DockIcon url={siteConfig.links.email}>
-          <IoMail className="h-5 w-5" />
         </DockIcon>
       </Dock>
     </button>

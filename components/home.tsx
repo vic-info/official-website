@@ -47,7 +47,7 @@ const Home = ({
   paperUrl,
 }: HomeProps) => {
   const width = useWindowWidth();
-  const [tabSelected, setTabSelected] = useState("all");
+  const [tabSelected, setTabSelected] = useState("about");
   const [animated, setAnimated] = useState(false);
   const router = useRouter();
 
@@ -72,17 +72,17 @@ const Home = ({
           transition: { type: "spring", stiffness: 300, damping: 15 },
         }}
         radius={"full"}
+        defaultSelectedKey="about"
         onSelectionChange={(selected) => {
           if (selected === "blog") {
             router.push("/blog");
-
             return;
           }
           setTabSelected(selected as string);
         }}
       >
-        <Tab key="projects" title="Services" />
         <Tab key="about" title="About VIC INFO" />
+        <Tab key="projects" title="Services" />
       </Tabs>
 
       <Responsive
@@ -124,7 +124,7 @@ const Home = ({
             industry. <br></br>
             <strong>
               If you are interested, please scan the WeChat QR code to learn
-              more, or contact us via email.
+              more, or contact us via Xiaohongshu.
             </strong>
           </p>
           <DockDemo resumeUrl={resumeUrl} />
@@ -132,7 +132,7 @@ const Home = ({
         <div
           key="iconCloud"
           className={cn(
-            "bg-white dark:bg-darkBg border-2 border-transparent dark:border-knight cursor-grab active:cursor-grabbing rounded-[2rem] flex justify-center items-center relative overflow-hidden p-10 md:p-8 z-[1]",
+            "bg-white dark:bg-darkBg border-2 border-transparent dark:border-knight cursor-grab active:cursor-grabbing rounded-[2rem] flex justify-center items-center relative overflow-hidden z-[1]",
             selectedCard[tabSelected]["iconCloud"]
               ? "opacity-100"
               : "opacity-50",
@@ -143,7 +143,7 @@ const Home = ({
         <div
           key="webAgent"
           className={cn(
-            "bg-white dark:bg-darkBg dark:border-2 dark:border-knight cursor-grab active:cursor-grabbing rounded-[2rem] flex justify-center items-center overflow-hidden z-[1]",
+            "bg-white dark:bg-darkBg dark:border-2 dark:border-knight cursor-grab active:cursor-grabbing rounded-[2rem] flex justify-center items-center overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 z-[1]",
             selectedCard[tabSelected]["webAgent"]
               ? "opacity-100"
               : "opacity-50",
@@ -154,7 +154,7 @@ const Home = ({
         <div
           key="chatBot"
           className={cn(
-            "bg-white dark:bg-darkBg dark:border-2 dark:border-knight cursor-grab active:cursor-grabbing rounded-[2rem] flex justify-center items-center overflow-hidden z-[1]",
+            "bg-white dark:bg-darkBg dark:border-2 dark:border-knight cursor-grab active:cursor-grabbing rounded-[2rem] flex justify-center items-center overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 z-[1]",
             selectedCard[tabSelected]["chatBot"] ? "opacity-100" : "opacity-50",
           )}
         >
@@ -163,7 +163,7 @@ const Home = ({
         <div
           key="actions"
           className={cn(
-            "bg-white dark:bg-darkBg dark:border-2 dark:border-knight cursor-grab active:cursor-grabbing rounded-[2rem] flex justify-center items-center overflow-hidden z-[1]",
+            "bg-white dark:bg-darkBg dark:border-2 dark:border-knight cursor-grab active:cursor-grabbing rounded-[2rem] flex justify-center items-center overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 z-[1]",
             selectedCard[tabSelected]["actions"] ? "opacity-100" : "opacity-50",
           )}
         >

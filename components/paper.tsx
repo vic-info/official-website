@@ -8,18 +8,21 @@ interface PaperProps {
 
 const Paper = ({ paperUrl }: PaperProps) => {
   return (
-    <div className="relative w-full h-full overflow-hidden group bg-[#0A192F] flex items-center justify-center p-2">
-      <div className="relative w-[95%] h-[95%]">
+    <div className="relative w-full h-full overflow-hidden group">
+      <div className="absolute inset-0">
         <Image
           alt="E-Verify"
-          className="object-contain"
+          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
           src={"https://github.com/vic-info/official-website/blob/main/public/everify.png?raw=true"}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           priority
+          quality={90}
+          loading="eager"
         />
       </div>
-      <button className="absolute bg-white/80 dark:bg-darkBg/80 backdrop-blur-sm bottom-2 left-2 transition-all w-10 h-10 md:w-[2.75rem] md:h-[2.75rem] duration-500 ease-in-out group-hover:w-32 p-2 rounded-full hover:bg-default-100 border border-white/20">
+      <div className="absolute inset-0 bg-black/10 transition-opacity duration-300 group-hover:bg-black/5" />
+      <button className="absolute bg-white/80 dark:bg-darkBg/80 backdrop-blur-sm bottom-4 left-4 transition-all w-10 h-10 md:w-[2.75rem] md:h-[2.75rem] duration-500 ease-in-out group-hover:w-32 p-2 rounded-full hover:bg-default-100 border border-white/20">
         <div className="flex justify-center items-center">
           <Link
             isExternal
