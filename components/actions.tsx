@@ -22,7 +22,7 @@ const Actions = ({ photoUrl }: ActionsProps) => {
           style={{ objectPosition: 'center -10%', filter: 'brightness(1.1)' }}
         />
       </div>
-      <div className="absolute inset-0 bg-black/20 transition-opacity duration-300 group-hover:bg-black/10" />
+      <div className="absolute inset-0 bg-black/10 transition-opacity duration-300 group-hover:bg-black/5" />
       <button className="absolute bg-white/80 dark:bg-darkBg/80 backdrop-blur-sm bottom-4 left-4 transition-all w-10 h-10 md:w-[2.75rem] md:h-[2.75rem] duration-500 ease-in-out group-hover:w-48 p-2 rounded-full hover:bg-default-100 border border-white/20">
         <div className="flex justify-center items-center">
           <Link isExternal color="foreground">
