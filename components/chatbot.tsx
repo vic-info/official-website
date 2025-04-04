@@ -10,7 +10,7 @@ const Chatbot = ({ chatbotUrl }: ChatbotProps) => {
     <div className="relative w-full h-full overflow-hidden group">
       <div className="absolute inset-0">
         <Image
-          alt="Tech Training"
+          alt="Tech Skills"
           className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
           src={"https://github.com/vic-info/official-website/blob/main/public/software-development.png?raw=true"}
           fill
